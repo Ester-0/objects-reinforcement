@@ -71,7 +71,7 @@
         // Resultado esperado: vídeo con audio https://oscarm.tinytake.com/msc/ODg2NTA5NV8yMjMxMjI2OQ
 
         // 1. Muestra por consola el precio del plan "PREMIUM". Deberíamos observar '$ 50'
-console.log(document.querySelector("#price-premium").textContent);
+        console.log(document.querySelector("#price-premium").textContent);
 
 
         // 2. Modifica por JavaScript el nombre del plan "Pro". Cambialo por el texto que aparece en el objeto "plans" para el plan "pro"
@@ -87,7 +87,7 @@ console.log(document.querySelector("#price-premium").textContent);
         // 3. Está página tiene una triquiñuela. Tras pasados 10 segundos, actualiza el precio del plan Pro a $ 20 para convencer al usuario y que tome el plan. Modifica la línea 79 con el valor adecuado para la propiedad .innerHTML para obtener el resultado esperado. No te precoupes por la función setTimeout, tan solo modifica la línea indicada.
         setTimeout(function () {
 
-            document.querySelector('#price-pro').innerHTML = `Cambiame!`;
+            document.querySelector('#price-pro').innerHTML = `$ 20`;
 
         }, 10000);
 
