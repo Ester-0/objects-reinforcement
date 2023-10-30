@@ -52,13 +52,22 @@ const flightReservation = {
 // Cada vez que modifiques una propiedad, comprueba el resultado mediante `node ex2.js`
 
 // 1. El vuelo se ha retrasado. Modifica la propiedad flightStatus a "Delayed"
+console.log("1. ", flightReservation.flightStatus = "Delayed");
 
 // 2. Como compensación del restraso, nos han cambiado el ticket a 'First Class'
+console.log("2. ", flightReservation.ticketClass = "Fist Class");
 
 // 3. Como consequencia del retraso, ahora la hora estimada de salida es 9:30 AM. Modifica la propiedad adecuada
+console.log("3. ", flightReservation.departure.time = "9:30 AM");
 
 // 4. Acaban de actualizar los tipos de comidas especiales que sirven en el avión. Añade la opción "Vegan"
+console.log("4. ", flightReservation.specialMeals.push("Vegan"));
 
 // 5. Por el retraso del avión nos van a aplicar un 15% de descuento sobre el precio del billete. Actualiza el precio total del billete con el nuevo valor, pero mantén el formato! totalPrice: '$999.99'
+
+const newPrice = flightReservation.totalPrice - (flightReservation.totalPrice * 0.15);
+flightReservation.totalPrice= newPrice
+console.log("5. ", flightReservation.totalPrice);
+
 
 console.log(flightReservation);
