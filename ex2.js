@@ -69,5 +69,4 @@ const newPrice = flightReservation.totalPrice - (flightReservation.totalPrice * 
 flightReservation.totalPrice= newPrice
 console.log("5. ", flightReservation.totalPrice);
 
-
 console.log(flightReservation);
