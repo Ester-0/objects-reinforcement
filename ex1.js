@@ -72,4 +72,4 @@ const suma = flightReservation.baggage.checked.totalWeight + flightReservation.b
 console.log("6. " , suma);
 
 // 7. Usa el método includes para indicar si este vuelo dispone del servicio de Wi-Fi o no (true o false)
-console.log("7. " , flightReservation.inFlightServices.includes("Wi-Fi"));
+console.log("7. ", flightReservation.inFlightServices.includes("Wi-Fi"));
